@@ -1,0 +1,106 @@
+:root{
+    --primary-color:#5757ff;
+    --secondart-color:#000000;
+    --bg-color:#ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* box-shadow: 0 0 0 1px red; */
+    font-family:inter_regular, fallback-inter_regular, Arial, sans-serif;
+}
+body{
+    background-color: #dfdcdc;
+}
+.nav-section .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 0.6rem;
+}
+.nav-section .navbar .nav{
+    display: flex;
+    gap: 2rem;
+}
+.nav-section .navbar .nav li{
+    list-style: none;
+}
+.fa-cart-shopping,
+.fa-user{
+    
+    
+}
+.nav-section .navbar .nav a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secondart-color);
+}
+.search{
+    width: 550px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    position: relative;
+}
+.fa-magnifying-glass{
+    position: absolute;
+    margin-left: 22rem;
+}
+.nav-section .navbar .logo{
+    font-weight: 900;
+    color: yellow;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+ .main-image{
+    height: 400px;
+    width: 1000px;
+    object-fit: cover;
+ }
+ .card, .card1, .card2{
+    max-width: 91vw;  
+    margin: auto;  
+} 
+.card , .card1,
+.card2{
+    border: 1px solid rgb(158, 148, 148);
+   margin: 2rem 1rem 2rem 1rem;
+   padding:0 1rem 2rem 1rem;
+   background-color: var(--bg-color);
+}
+.sub-heading{
+    margin: 32px 0;
+    color: var(--primary-color);
+}
+.card-items{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(75, 74, 74);
+    margin-left: 0.6rem;
+    
+}
+.card-items:hover{
+transform:scale(1.1,1.1) ;
+}
+ .text{
+    text-align: center;
+    margin: 5px 0;
+    font-weight: 700;
+ }
+.footer{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-weight: 900;
+    font-size: 1.1rem;
+
+    margin-top: 2rem;
+}
