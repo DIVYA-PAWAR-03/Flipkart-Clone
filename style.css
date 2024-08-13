@@ -163,7 +163,7 @@ h2{
 }
 .cards-section .card-item:hover,
 .card-sec-two .card-item:hover,
-.card-sec-three .card-item :hover{
+.card-sec-three .card-item:hover{
     transform: scale(1.1,1.1);
 }
 
