@@ -7,30 +7,41 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
 </head>
 <body>
+    <!-- for toggle navbar -->
+        <div class="main_sidebar">
+            <button id="close_but">X</button>
+            <a href="">Home</a>
+            <a href="">Login</a>
+            <a href="">Products</a>
+            <a href="">Contact us</a>
+        </div>
     <header class="navbar-section">
         <div class="left-section">
-            <div class="toggle-bar">
+            <div class="toggle-bar" id="nav_toggle_button">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-            <div class="logo"><h1>Flipkart</h1></div>
+            <div class="logo" id="main_logo"><h1>Flipkart</h1></div>
         </div>
         <div class="center-section">
             <div class="search-bar">
                 <input type="text"  placeholder="Search for Products, Brands and More.." class="inner-text"><i class="fa-solid fa-magnifying-glass"></i>
-            </div>
                 <div class="mic">
                     <i class="fa-solid fa-microphone-slash"></i>
                 </div>
+            </div>
+               
         </div>
         <div class="right-section">
             <ul class="links">
-                <li><a href="">Login</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">About-us</a></li>
+                <li><a href="" class="link">Login</a></li>
+                <li><a href="" class="link">Home</a></li>
+                <li><a href="" class="link">About-us</a></li>
             </ul>
 
         </div>
@@ -394,7 +405,7 @@
 
         </div>
     </main>
-    <footer>
+    <footer>f
         <div class="footer--container">
         <div class="footer-content">
             <h3>Contact-us</h3>
@@ -426,6 +437,9 @@
         <p>copyright&copy; 2024 all rights reserved</p>
     </div>
     </footer>
+
+    <script src="script.js"></script>
+    <script src="script_second.js"></script>
 </body>
 </html>
       

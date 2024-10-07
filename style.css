@@ -14,14 +14,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* box-shadow: 0 0 0 1px red;  */
 
 }
 body{
     background-color: var(--Background-color);
 }
+
+/* nav toggle by js */
+.main_sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 200px;
+    background-color:skyblue;
+    padding: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transform: translateY(-100%);
+    transition: transform 200ms;
+}
+.main_sidebar .close_but{
+    font-size: 3rem;
+    float: right;
+}
+
 .navbar-section{
     display: flex;
-    align-items: center;
+    align-items: center;    
     justify-content: space-between;
     background-color:var(--nav-section-color);
     padding: 1.1rem;
@@ -46,22 +68,30 @@ body{
     margin: 0 0 0 1rem;
 }
 .left-section .logo{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #fcfc1c;
 }
 .center-section{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
+    width: 100%;
+    /* background-color: red; */
+    margin: 0 3rem;
 }
 .center-section .search-bar{
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: center;
+
 }
 .center-section .search-bar input{
     padding: .7rem 0;
     border: none;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     border-radius: 5px 0 0 5px;
 }
 .center-section .search-bar .inner-text{
@@ -70,13 +100,16 @@ body{
 }
 .search-bar i{
 background-color: var(--Background-color);
-padding: .65rem 1rem;
+padding: .68rem 1rem;
 border-radius: 0 5px 5px 0;
 }
-.center-section .mic{
+.center-section .search-bar .mic i{
     background-color: var(--Background-color);
-    padding: .7rem;
     border-radius: 100%;
+    padding: .9rem;
+    margin-left: .5rem;
+    
+   
 }
 .right-section .links{
     display: flex;
@@ -88,6 +121,7 @@ border-radius: 0 5px 5px 0;
     list-style: none;
 }
 .right-section .links a{
+    white-space: nowrap;
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 500;
@@ -106,6 +140,7 @@ border-radius: 0 5px 5px 0;
     width: 100%;
     object-fit: cover;
     margin-top: 1rem;
+    
 }
 
 .all-items{
@@ -116,7 +151,7 @@ border-radius: 0 5px 5px 0;
      border: var(--border);
      padding: 2rem;
      background-color: var(--container-color);
-     
+     overflow-x: auto;
 }
 .all-items p{
     padding-top: 9px;
@@ -177,7 +212,7 @@ h2{
 }
 .footer--container{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
       margin-top: 3rem;
     border: var(--border);
